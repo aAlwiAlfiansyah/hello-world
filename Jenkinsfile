@@ -1,11 +1,11 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent {
-        node {
-            label 'checker'
-        }
-    }
+    // agent {
+    //     node {
+    //         label 'checker'
+    //     }
+    // }
     environment {
         // DANGER_GITHUB_API_TOKEN for Quamina
         DANGER_GITHUB_API_TOKEN = retrieveQuaminaToken()
